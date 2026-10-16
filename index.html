@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>About — Jesus Loves Tyler</title>
+    <meta name="description" content="Why jesuslovestyler.com exists: a free Bible and the Gospel of Jesus Christ for anyone, anywhere — no cost, no account, no catch." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #fdf8ee;
+        --paper-soft: #f7efdb;
+        --ink: #3d2c1c;
+        --ink-soft: #6d5940;
+        --accent: #b4551f;
+        --accent-strong: #96430f;
+        --accent-ink: #ffffff;
+        --leaf: #5c7247;
+        --line: #e3d3ae;
+        --card: #fffdf7;
+        --shadow: 0 10px 30px rgba(93, 58, 18, 0.14);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #211a12;
+          --paper-soft: #2a2115;
+          --ink: #f3e8d2;
+          --ink-soft: #cdbb97;
+          --accent: #e08a4c;
+          --accent-strong: #eda76b;
+          --accent-ink: #2a1a08;
+          --leaf: #a3bd8a;
+          --line: #4a3a24;
+          --card: #2c2317;
+          --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.65;
+      }
+
+      .page {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 1.25rem 1.25rem 3rem;
+      }
+      @media (min-width: 640px) {
+        .page { padding: 2.5rem 2rem 4rem; }
+      }
+
+      .hero {
+        margin: 0 0 2rem;
+      }
+      .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+      .hero figcaption {
+        margin-top: 0.6rem;
+        font-size: 0.875rem;
+        color: var(--ink-soft);
+        text-align: center;
+        font-style: italic;
+        font-family: "Lora", Georgia, serif;
+      }
+
+      h1, h2 {
+        font-family: "Lora", Georgia, "Times New Roman", serif;
+        font-weight: 600;
+        line-height: 1.2;
+        color: var(--ink);
+      }
+      h1 {
+        font-size: 2.1rem;
+        margin: 0 0 1rem;
+      }
+      h2 {
+        font-size: 1.45rem;
+        margin: 2.4rem 0 0.7rem;
+      }
+      @media (min-width: 640px) {
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.6rem; }
+      }
+
+      p { margin: 0 0 1rem; }
+      .lede {
+        font-size: 1.16rem;
+        line-height: 1.6;
+      }
+      .lede strong { color: var(--accent-strong); font-weight: 700; }
+
+      .here-list {
+        list-style: none;
+        margin: 0.5rem 0 1rem;
+        padding: 0;
+      }
+      .here-list li {
+        position: relative;
+        padding: 0.45rem 0 0.45rem 1.6rem;
+      }
+      .here-list li::before {
+        content: "";
+        position: absolute;
+        left: 0.15rem;
+        top: 1.02rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: var(--leaf);
+      }
+      .here-list .item-name {
+        font-weight: 700;
+      }
+
+      blockquote.verse {
+        margin: 1.4rem 0 0.5rem;
+        padding: 1.1rem 1.25rem;
+        background: var(--paper-soft);
+        border-radius: 10px;
+        font-family: "Lora", Georgia, serif;
+        font-size: 1.25rem;
+        font-style: italic;
+        line-height: 1.5;
+        text-align: center;
+      }
+      blockquote.verse p { margin: 0; }
+      .verse-ref {
+        display: block;
+        margin-top: 0.55rem;
+        font-size: 0.95rem;
+        font-style: normal;
+        color: var(--ink-soft);
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin: 2.4rem 0 0;
+      }
+      @media (min-width: 520px) {
+        .actions { flex-direction: row; }
+        .actions a { flex: 1; }
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.9rem 1.4rem;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 1.05rem;
+        text-decoration: none;
+        text-align: center;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+      }
+      .btn:active { transform: scale(0.98); }
+      .btn:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 2px;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+      .btn-primary:hover { background: var(--accent-strong); }
+      .btn-secondary {
+        background: var(--card);
+        color: var(--ink);
+        border: 1.5px solid var(--line);
+      }
+      .btn-secondary:hover { border-color: var(--accent); color: var(--accent-strong); }
+      @media (prefers-reduced-motion: reduce) {
+        .btn { transition: none; }
+      }
+
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line);
+        text-align: center;
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+      }
+      footer p { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <figure class="hero">
+        <img src="assets/bible-by-the-window.webp" alt="A watercolor painting of an open Bible on a wooden table by a sunlit window, with a small stack of books beside it and a garden outside" width="1920" height="1280" />
+        <figcaption>An open Bible, morning light, and a few more ready to give away.</figcaption>
+      </figure>
+
+      <h1>About this site</h1>
+      <p class="lede">
+        This site exists for one simple reason: so that <strong>anyone, anywhere</strong> can have a
+        free Bible and hear the Gospel of Jesus Christ. No cost, no account, no catch — just open
+        the page and read.
+      </p>
+      <p>
+        If you found your way here by scanning a code, clicking a link, or hearing about it from a
+        friend, you are welcome here. Everything on this site was made to be given away.
+      </p>
+
+      <h2>What is here</h2>
+      <ul class="here-list">
+        <li>
+          <span class="item-name">The complete World English Bible</span> — the whole Bible, free
+          to read right in your browser, with the words of Jesus in red.
+        </li>
+        <li>
+          <span class="item-name">The Gospel</span> — a plain, friendly presentation of who Jesus
+          is and what He has done for you.
+        </li>
+        <li>
+          <span class="item-name">Devotional pages</span> — gentle words for hard nights and for
+          hurting people, for whenever you need them.
+        </li>
+        <li>
+          <span class="item-name">Everyday tools and simple games</span> — handy little helpers
+          for daily life, and a bit of quiet fun.
+        </li>
+      </ul>
+      <p>All of it is free, and all of it always will be.</p>
+
+      <h2>Who made it</h2>
+      <p>
+        This site was built by Tyler, a Christian missionary in eastern North Carolina who gives
+        away Bibles in his town, together with Noki, his AI assistant. It is nothing fancy — just
+        one man sharing what he himself has been given, and glad to share it with you.
+      </p>
+
+      <h2>Free means free</h2>
+      <p>
+        Everything here is public domain. Copy it, share it, print it, hand it to a friend — no
+        permission needed, no strings attached. That is the whole point. Jesus said it best:
+      </p>
+      <blockquote class="verse">
+        <p>&ldquo;Freely you received, so freely give.&rdquo;</p>
+        <span class="verse-ref">— Matthew 10:8, World English Bible</span>
+      </blockquote>
+
+      <nav class="actions" aria-label="Where to go next">
+        <a class="btn btn-primary" href="https://jesuslovestyler.github.io/World-English-Bible/">Read the free Bible</a>
+        <a class="btn btn-secondary" href="https://jesuslovestyler.com/">Back to the home page</a>
+      </nav>
+
+      <footer>
+        <p>Made by Noki for Tyler. Public domain — share freely.</p>
+      </footer>
+    </main>
+  </body>
+</html>
