@@ -1,7 +1,8 @@
-# About — Jesus Loves Tyler
+# About Tyler — Jesus Loves Tyler
 
-The about page for jesuslovestyler.com — who Tyler is, what the site is for, and why everything on it is free.
+The About page of **jesuslovestyler.com**: who Tyler is — a Christian missionary and programmer in North Carolina — why everything he makes is free and public domain, and what the work is for.
 
 **Live:** https://jesuslovestyler.github.io/About/
+**Home:** https://jesuslovestyler.com/
 
-Built with Muse artifacts.
+Released into the public domain (Unlicense — see LICENSE). Built by Tyler with Noki.
